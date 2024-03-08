@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define default light mode variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Override variables for dark mode */
+.dark-mode {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
